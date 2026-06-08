@@ -1,0 +1,18 @@
+# Java / Maven
+backend/target/
+*.class
+
+# Node / Vite
+frontend/node_modules/
+frontend/dist/
+npm-debug.log*
+
+# Floci / datos locales
+data/
+
+# IDE / OS
+.idea/
+.vscode/
+*.iml
+.DS_Store
+Thumbs.db
