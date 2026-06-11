@@ -1,0 +1,30 @@
+server:
+  port: 8080
+
+spring:
+  application:
+    name: drive-backend
+  servlet:
+    multipart:
+      max-file-size: 100MB
+      max-request-size: 100MB
+
+drive:
+  aws:
+    # Por defecto apunta a Floci. En docker-compose se sobreescribe via env vars.
+    endpoint: ${DRIVE_AWS_ENDPOINT:http://localhost:4566}
+    region: ${DRIVE_AWS_REGION:us-east-1}
+    access-key: ${DRIVE_AWS_ACCESS_KEY:test}
+    secret-key: ${DRIVE_AWS_SECRET_KEY:test}
+    bucket: ${DRIVE_AWS_BUCKET:drive-files}
+    metadata-table: ${DRIVE_AWS_TABLE:drive-nodes}
+    users-table: ${DRIVE_AWS_USERS_TABLE:drive-users}
+  security:
+    # En produccion el secreto SIEMPRE va por variable de entorno, nunca en el repo.
+    jwt-secret: ${DRIVE_JWT_SECRET:cambia-esta-clave-por-una-larga-y-secreta-de-al-menos-32-bytes}
+    jwt-expiration-minutes: ${DRIVE_JWT_EXP_MIN:720}
+
+logging:
+  level:
+    io.drive: INFO
+    software.amazon.awssdk: WARN
