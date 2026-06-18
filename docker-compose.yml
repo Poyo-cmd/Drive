@@ -1,0 +1,37 @@
+services:
+  # Emulador local de AWS (S3 + DynamoDB) — reemplaza a la nube real
+  floci:
+    image: floci/floci:latest
+    ports:
+      - "4566:4566"
+    environment:
+      - FLOCI_HOSTNAME=floci
+      - FLOCI_STORAGE_MODE=hybrid
+      - FLOCI_STORAGE_PERSISTENT_PATH=/data
+    volumes:
+      - ./floci-data:/data
+
+  # Backend Spring Boot (Java 21)
+  backend:
+    build: ./backend
+    ports:
+      - "8080:8080"
+    environment:
+      - DRIVE_AWS_ENDPOINT=http://floci:4566
+      - DRIVE_AWS_REGION=us-east-1
+      - DRIVE_AWS_ACCESS_KEY=test
+      - DRIVE_AWS_SECRET_KEY=test
+      - DRIVE_AWS_BUCKET=drive-files
+      - DRIVE_AWS_TABLE=drive-nodes
+      - DRIVE_AWS_USERS_TABLE=drive-users
+      - DRIVE_JWT_SECRET=cambia-esta-clave-por-una-larga-y-secreta-de-al-menos-32-bytes
+    depends_on:
+      - floci
+
+  # Frontend Vue 3 servido por nginx
+  frontend:
+    build: ./frontend
+    ports:
+      - "8088:80"
+    depends_on:
+      - backend
