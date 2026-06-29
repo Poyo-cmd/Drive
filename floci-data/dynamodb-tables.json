@@ -1,0 +1,130 @@
+{
+  "000000000000/us-east-1::drive-nodes" : {
+    "tableName" : "drive-nodes",
+    "keySchema" : [ {
+      "attributeName" : "id",
+      "keyType" : "HASH"
+    } ],
+    "attributeDefinitions" : [ {
+      "attributeName" : "id",
+      "attributeType" : "S"
+    }, {
+      "attributeName" : "parentId",
+      "attributeType" : "S"
+    } ],
+    "tableStatus" : "ACTIVE",
+    "creationDateTime" : "2026-06-08T00:43:21.588743527Z",
+    "itemCount" : 0,
+    "tableSizeBytes" : 0,
+    "provisionedThroughput" : {
+      "readCapacityUnits" : 0,
+      "writeCapacityUnits" : 0,
+      "lastIncreaseDateTime" : null,
+      "lastDecreaseDateTime" : null,
+      "numberOfDecreasesToday" : 0
+    },
+    "tableArn" : "arn:aws:dynamodb:us-east-1:000000000000:table/drive-nodes",
+    "tags" : { },
+    "globalSecondaryIndexes" : [ {
+      "indexName" : "parent-index",
+      "keySchema" : [ {
+        "attributeName" : "parentId",
+        "keyType" : "HASH"
+      } ],
+      "indexArn" : "arn:aws:dynamodb:us-east-1:000000000000:table/drive-nodes/index/parent-index",
+      "projectionType" : "ALL",
+      "provisionedThroughput" : {
+        "readCapacityUnits" : 0,
+        "writeCapacityUnits" : 0,
+        "lastIncreaseDateTime" : null,
+        "lastDecreaseDateTime" : null,
+        "numberOfDecreasesToday" : 0
+      },
+      "itemCount" : 0,
+      "indexSizeBytes" : 0,
+      "nonKeyAttributes" : [ ],
+      "partitionKeyName" : "parentId",
+      "sortKeyName" : null
+    } ],
+    "localSecondaryIndexes" : [ ],
+    "billingMode" : "PAY_PER_REQUEST",
+    "ttlAttributeName" : null,
+    "ttlEnabled" : false,
+    "pointInTimeRecoveryEnabled" : false,
+    "pointInTimeRecoveryRecoveryPeriodInDays" : 35,
+    "deletionProtectionEnabled" : false,
+    "streamEnabled" : false,
+    "streamArn" : null,
+    "streamViewType" : null,
+    "sseEnabled" : false,
+    "sseType" : null,
+    "kmsMasterKeyArn" : null,
+    "kinesisStreamingDestinations" : [ ],
+    "partitionKeyName" : "id",
+    "sortKeyName" : null
+  },
+  "000000000000/us-east-1::drive-users" : {
+    "tableName" : "drive-users",
+    "keySchema" : [ {
+      "attributeName" : "id",
+      "keyType" : "HASH"
+    } ],
+    "attributeDefinitions" : [ {
+      "attributeName" : "id",
+      "attributeType" : "S"
+    }, {
+      "attributeName" : "username",
+      "attributeType" : "S"
+    } ],
+    "tableStatus" : "ACTIVE",
+    "creationDateTime" : "2026-06-08T00:43:21.634712357Z",
+    "itemCount" : 0,
+    "tableSizeBytes" : 0,
+    "provisionedThroughput" : {
+      "readCapacityUnits" : 0,
+      "writeCapacityUnits" : 0,
+      "lastIncreaseDateTime" : null,
+      "lastDecreaseDateTime" : null,
+      "numberOfDecreasesToday" : 0
+    },
+    "tableArn" : "arn:aws:dynamodb:us-east-1:000000000000:table/drive-users",
+    "tags" : { },
+    "globalSecondaryIndexes" : [ {
+      "indexName" : "username-index",
+      "keySchema" : [ {
+        "attributeName" : "username",
+        "keyType" : "HASH"
+      } ],
+      "indexArn" : "arn:aws:dynamodb:us-east-1:000000000000:table/drive-users/index/username-index",
+      "projectionType" : "ALL",
+      "provisionedThroughput" : {
+        "readCapacityUnits" : 0,
+        "writeCapacityUnits" : 0,
+        "lastIncreaseDateTime" : null,
+        "lastDecreaseDateTime" : null,
+        "numberOfDecreasesToday" : 0
+      },
+      "itemCount" : 0,
+      "indexSizeBytes" : 0,
+      "nonKeyAttributes" : [ ],
+      "partitionKeyName" : "username",
+      "sortKeyName" : null
+    } ],
+    "localSecondaryIndexes" : [ ],
+    "billingMode" : "PAY_PER_REQUEST",
+    "ttlAttributeName" : null,
+    "ttlEnabled" : false,
+    "pointInTimeRecoveryEnabled" : false,
+    "pointInTimeRecoveryRecoveryPeriodInDays" : 35,
+    "deletionProtectionEnabled" : false,
+    "streamEnabled" : false,
+    "streamArn" : null,
+    "streamViewType" : null,
+    "sseEnabled" : false,
+    "sseType" : null,
+    "kmsMasterKeyArn" : null,
+    "kinesisStreamingDestinations" : [ ],
+    "partitionKeyName" : "id",
+    "sortKeyName" : null
+  }
+}

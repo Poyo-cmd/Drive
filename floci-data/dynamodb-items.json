@@ -1,0 +1,125 @@
+{
+  "000000000000/us-east-1::drive-nodes" : {
+    "c2ca0ab2-54dd-4176-bb3f-2c4ef47cba1b" : {
+      "createdAt" : {
+        "S" : "2026-06-08T00:58:13.286213630Z"
+      },
+      "trashedAt" : {
+        "S" : "2026-06-08T00:59:17.472424091Z"
+      },
+      "folder" : {
+        "BOOL" : true
+      },
+      "size" : {
+        "N" : "0"
+      },
+      "name" : {
+        "S" : "Instaladores"
+      },
+      "id" : {
+        "S" : "c2ca0ab2-54dd-4176-bb3f-2c4ef47cba1b"
+      },
+      "ownerId" : {
+        "S" : "9a210b33-4eb9-4095-8ca6-b43f0f3b1d3f"
+      },
+      "parentId" : {
+        "S" : "root#9a210b33-4eb9-4095-8ca6-b43f0f3b1d3f"
+      },
+      "trashed" : {
+        "BOOL" : true
+      },
+      "updatedAt" : {
+        "S" : "2026-06-08T00:59:17.472424091Z"
+      }
+    },
+    "d5b96f99-d797-4956-9339-8b224a4d0c36" : {
+      "createdAt" : {
+        "S" : "2026-06-11T22:37:37.309849315Z"
+      },
+      "folder" : {
+        "BOOL" : false
+      },
+      "s3Key" : {
+        "S" : "blobs/d5b96f99-d797-4956-9339-8b224a4d0c36"
+      },
+      "size" : {
+        "N" : "7003808"
+      },
+      "name" : {
+        "S" : "Claude Setup.exe"
+      },
+      "id" : {
+        "S" : "d5b96f99-d797-4956-9339-8b224a4d0c36"
+      },
+      "ownerId" : {
+        "S" : "9a210b33-4eb9-4095-8ca6-b43f0f3b1d3f"
+      },
+      "contentType" : {
+        "S" : "application/x-msdownload"
+      },
+      "parentId" : {
+        "S" : "root#9a210b33-4eb9-4095-8ca6-b43f0f3b1d3f"
+      },
+      "trashed" : {
+        "BOOL" : false
+      },
+      "updatedAt" : {
+        "S" : "2026-06-11T22:37:37.309849315Z"
+      }
+    },
+    "a34d3256-801d-4c87-ade6-4beb92b816cd" : {
+      "createdAt" : {
+        "S" : "2026-06-08T00:57:39.170834992Z"
+      },
+      "trashedAt" : {
+        "S" : "2026-06-08T00:59:18.560836552Z"
+      },
+      "folder" : {
+        "BOOL" : false
+      },
+      "s3Key" : {
+        "S" : "blobs/a34d3256-801d-4c87-ade6-4beb92b816cd"
+      },
+      "size" : {
+        "N" : "2380800"
+      },
+      "name" : {
+        "S" : "SteamSetup.exe"
+      },
+      "id" : {
+        "S" : "a34d3256-801d-4c87-ade6-4beb92b816cd"
+      },
+      "ownerId" : {
+        "S" : "9a210b33-4eb9-4095-8ca6-b43f0f3b1d3f"
+      },
+      "contentType" : {
+        "S" : "application/x-msdownload"
+      },
+      "parentId" : {
+        "S" : "root#9a210b33-4eb9-4095-8ca6-b43f0f3b1d3f"
+      },
+      "trashed" : {
+        "BOOL" : true
+      },
+      "updatedAt" : {
+        "S" : "2026-06-08T00:59:18.560836552Z"
+      }
+    }
+  },
+  "000000000000/us-east-1::drive-users" : {
+    "9a210b33-4eb9-4095-8ca6-b43f0f3b1d3f" : {
+      "createdAt" : {
+        "S" : "2026-06-08T00:44:00.287318042Z"
+      },
+      "id" : {
+        "S" : "9a210b33-4eb9-4095-8ca6-b43f0f3b1d3f"
+      },
+      "passwordHash" : {
+        "S" : "$2a$10$ePszgWvLDdUZJg33Sew4YubKFuY4d8eAopIKNReEKL1naZ2RGB5V."
+      },
+      "username" : {
+        "S" : "poyo"
+      }
+    }
+  }
+}

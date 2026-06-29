@@ -1,0 +1,23 @@
+{
+  "000000000000/drive-files" : {
+    "name" : "drive-files",
+    "creationDate" : "2026-06-08T00:43:21.481298652Z",
+    "versioningStatus" : null,
+    "tags" : { },
+    "notificationConfiguration" : null,
+    "objectLockEnabled" : false,
+    "defaultRetention" : null,
+    "policy" : null,
+    "corsConfiguration" : null,
+    "lifecycleConfiguration" : null,
+    "transitionDefaultMinimumObjectSize" : null,
+    "acl" : null,
+    "encryptionConfiguration" : null,
+    "publicAccessBlockConfiguration" : null,
+    "ownershipControlsConfiguration" : null,
+    "requestPaymentPayer" : null,
+    "region" : "us-east-1",
+    "websiteConfiguration" : null,
+    "versioningEnabled" : false
+  }
+}
